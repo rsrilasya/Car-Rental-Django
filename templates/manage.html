@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block title %}Driver Car Mechanic Services{% endblock title %}
+{% block body %}
+{% comment %} <h1>car Bookings :-</h1> {% endcomment %}
+{% for i in books %}
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{i.model}}</h5>
+    <p class="card-text">You can pick up your car at :- {{i.pickup}} on Date :- {{i.pickdate}}</p>
+  </div>
+  <div class="card-footer text-muted">
+    Drop Date :- {{i.dropdate}}
+  </div>
+</div>
+{% endfor %}
+{% comment %} <h1>Rented Cars :-</h1> {% endcomment %}
+{% for i in serv %}
+<div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{i.model}}</h5>
+    <p class="card-text">You can pick up your car at :- {{i.pickup}} on Date :- {{i.pickdate}}</p>
+  </div>
+  <div class="card-footer text-muted">
+    Drop Date :- {{i.dropdate}}
+  </div>
+</div>
+{% endfor %}
+
+{% endblock body %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
